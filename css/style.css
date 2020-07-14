@@ -58,17 +58,35 @@ body {
 
 .menu {
     font-weight: 500;
-    position: relative;
+
 }
 
-menu::after {
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+a.link-menu{   
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+
+    text-decoration: none;
+    color: #fff;
+}
+
+a.link-menu:after {
     
     content: "";
     position: absolute;
     bottom: 0;
     left:0;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 2px;
+
+    background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
